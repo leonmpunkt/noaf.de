@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/noaf.de/static/css/main.4cc0cb6d.css",
-    "main.js": "/noaf.de/static/js/main.e66852fb.js",
+    "main.css": "/noaf.de/static/css/main.41ccfd3a.css",
+    "main.js": "/noaf.de/static/js/main.d43d90bf.js",
     "static/js/787.956ba55a.chunk.js": "/noaf.de/static/js/787.956ba55a.chunk.js",
     "index.html": "/noaf.de/index.html",
-    "main.4cc0cb6d.css.map": "/noaf.de/static/css/main.4cc0cb6d.css.map",
-    "main.e66852fb.js.map": "/noaf.de/static/js/main.e66852fb.js.map",
+    "main.41ccfd3a.css.map": "/noaf.de/static/css/main.41ccfd3a.css.map",
+    "main.d43d90bf.js.map": "/noaf.de/static/js/main.d43d90bf.js.map",
     "787.956ba55a.chunk.js.map": "/noaf.de/static/js/787.956ba55a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cc0cb6d.css",
-    "static/js/main.e66852fb.js"
+    "static/css/main.41ccfd3a.css",
+    "static/js/main.d43d90bf.js"
   ]
 }
