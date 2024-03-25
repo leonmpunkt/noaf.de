@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/noaf.de/static/css/main.5928d123.css",
-    "main.js": "/noaf.de/static/js/main.51f6412f.js",
-    "static/js/787.956ba55a.chunk.js": "/noaf.de/static/js/787.956ba55a.chunk.js",
+    "main.js": "/noaf.de/static/js/main.c8ec411c.js",
+    "static/js/787.12ca1881.chunk.js": "/noaf.de/static/js/787.12ca1881.chunk.js",
     "static/media/Werbedeutsch.otf": "/noaf.de/static/media/Werbedeutsch.76d77691bafcc959522f.otf",
     "static/media/Fontspring-DEMO-articulatcf-extrabold-BF64a38d8b06d4e.otf": "/noaf.de/static/media/Fontspring-DEMO-articulatcf-extrabold-BF64a38d8b06d4e.931c596c52eb019ec90b.otf",
     "index.html": "/noaf.de/index.html",
     "main.5928d123.css.map": "/noaf.de/static/css/main.5928d123.css.map",
-    "main.51f6412f.js.map": "/noaf.de/static/js/main.51f6412f.js.map",
-    "787.956ba55a.chunk.js.map": "/noaf.de/static/js/787.956ba55a.chunk.js.map"
+    "main.c8ec411c.js.map": "/noaf.de/static/js/main.c8ec411c.js.map",
+    "787.12ca1881.chunk.js.map": "/noaf.de/static/js/787.12ca1881.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5928d123.css",
-    "static/js/main.51f6412f.js"
+    "static/js/main.c8ec411c.js"
   ]
 }
