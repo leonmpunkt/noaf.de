@@ -7,12 +7,16 @@ import './Header.css'; // Make sure you have a Header.css for custom styles
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg" className="justify-content-between">
+    <Navbar expand="lg" className="justify-content-between">
       <Container>
-        <Navbar.Brand href="#home" className="brand-container">
+        <Navbar.Brand href="/home" className="brand-container">
           <div>
-            <h1 className="brand-title">NoAf.De</h1>
-            <p className="brand-subtitle">Alternative Fakten Richtig stellen</p>
+            <img
+              src={process.env.PUBLIC_URL + '/images/Header.svg'}
+              alt="Logo"
+              className="brand-logo"
+            />
+            
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -20,7 +24,7 @@ const Header = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/home">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             {/* Add more Nav.Link items here */}
           </Nav>

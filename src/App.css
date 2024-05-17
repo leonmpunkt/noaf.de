@@ -9,7 +9,7 @@
 /* Add space at the top of the website and set base font */
 body {
   padding-top: 80px; /* Adjusted space for fixed header */
-  background: #f7f7f7; /* Light grey background for the whole page */
+  background: light; /* Light grey background for the whole page */
   font-family: 'Arial', sans-serif; /* Default font */
   min-height: 100vh; /* Full viewport height */
   display: flex;
@@ -25,7 +25,7 @@ body {
 /* Header styles */
 .App-header {
   text-align: center;
-  background-color: #ffffff; /* White background for the header */
+  background-color: #57b3ff; /* White background for the header */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
   position: fixed; /* Fix the header */
   top: 0; /* Align the header to the top */
@@ -66,10 +66,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centers the gallery items */
-  gap: 10px; /* Spacing between gallery items */
-  padding: 20px;
+  gap: 5px; /* Spacing between gallery items */
+  /* padding: 20px; */
   margin: 20px auto; /* Space above and below the gallery, centered horizontally */
-  max-width: 95%; /* Maximum width of the gallery container */
+  max-width: 80%; /* Maximum width of the gallery container */
 }
 
 /* Gallery item styles ensuring responsive behavior */

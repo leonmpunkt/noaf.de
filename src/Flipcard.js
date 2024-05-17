@@ -1,6 +1,8 @@
 // Flipcard.js
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import './Flipcard.css'; // make sure to create this CSS file
 
 const FlipCard = ({ image }) => {
@@ -18,7 +20,12 @@ const FlipCard = ({ image }) => {
         </div>
         <div className="flip-card-back">
           {/* Image information */}
-          <p>{image.text}</p>
+          <div>
+          <p>{image.text} </p>
+          </div>
+          <div>
+            <p><Link to={image.mehrLink}>Mehr lesen</Link></p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,12 +1,19 @@
 // App.js
 // import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
+import React, { useState } from 'react';
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useNavigationType
+} from "react-router-dom";
 import About from './About'; // Import the About component
 import './App.css';
 import FlipCard from './Flipcard'; // Import the new component
+import Footer from './Footer'; // Import the Footer component
+import Header from './Header'; // Import the Header component
+import SubpageMamaSindWirNazis from "./pages/SubpageMamaSindWirNazis";
 
 async function fetchTextFile(filePath) {
   try {
@@ -24,17 +31,21 @@ async function fetchTextFile(filePath) {
 
 const App = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const action = useNavigationType();
+  const location = useLocation();
+  const pathname = location.pathname;
 
   const images = [
     {
-      src: process.env.PUBLIC_URL + '/images/Sticker/Slide1.png',
+      src: process.env.PUBLIC_URL + '/images/Sticker/Nazis.png',
       width: 320,
       height: 212,
       // textFilePath: "sticker_text/sticker1.txt",
-      text: "Wie keine andere Partei im Bundestag polarisiert die AfD mit Sprache. Eine der wichtigsten Kommunikationsweisen hierbei ist die kalkulierte Provokation, ein Mittel, um mit hoher Wahrscheinlichkeit heftige öffentliche Reaktionen auszulösen."
+      text: "Die AfD nutzt Worte von Nationalsozialisten und Neonazis, aber willpartout nicht rechtsextrem sein. ",
+      mehrLink: "/mamasindwirnazis"
     },
     {
-      src: process.env.PUBLIC_URL + '/images/Sticker/Slide2.png',
+      src: process.env.PUBLIC_URL + '/images/Sticker/Kartoffel.png',
       width: 320,
       height: 212,
       tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
@@ -42,25 +53,25 @@ const App = () => {
       textFilePath: "sticker_text/sticker1.txt",
     },
     {
-      src: process.env.PUBLIC_URL + '/images/Sticker/Slide3.png',
+      src: process.env.PUBLIC_URL + '/images/Sticker/Filterblase.png',
       width: 320,
       height: 212,
       textFilePath: "sticker_text/sticker1.txt",
     },
     {
-      src: process.env.PUBLIC_URL + '/images/Sticker/Slide4.png',
+      src: process.env.PUBLIC_URL + '/images/Sticker/Herzen.png',
       width: 320,
       height: 212,
       textFilePath: "sticker_text/sticker1.txt",
     },
     {
-      src: process.env.PUBLIC_URL + '/images/Sticker/Slide5.png',
+      src: process.env.PUBLIC_URL + '/images/Sticker/Hetze.png',
       width: 320,
       height: 212,
       textFilePath: "sticker_text/sticker1.txt",
     },
     {
-      src: process.env.PUBLIC_URL + '/images/Sticker/Slide6.png',
+      src: process.env.PUBLIC_URL + '/images/Sticker/Täter.png',
       width: 320,
       height: 212,
       textFilePath: "sticker_text/sticker1.txt",
@@ -78,25 +89,25 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <div className="App">
       <Header />
-      <div className="App">
-        <Routes>
-          <Route path="/" element={
-            <div className="content">
-              <div className="gallery-container">
-                {images.map((img, index) => (
-                  <FlipCard key={index} image={img}/>
-                ))}
-              </div>
+      <Routes>
+        <Route path="/" element={<Navigate replace to="/home" />} />
+        <Route path="/home" element={
+          <div className="content">
+            <div className="gallery-container">
+              {images.map((img, index) => (
+                <FlipCard key={index} image={img} mehrLink={img.mehrLink} />
+              ))}
             </div>
-          } />
-          <Route path="/about" element={<About />} />
-          {/* ...other routes */}
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+          </div>
+        } />
+        <Route path="/about" element={<About />} />
+        <Route path="/mamasindwirnazis" element={<SubpageMamaSindWirNazis />} />
+        {/* ...other routes */}
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
