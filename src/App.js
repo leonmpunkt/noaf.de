@@ -13,7 +13,7 @@ import './App.css';
 import FlipCard from './Flipcard'; // Import the new component
 import Footer from './Footer'; // Import the Footer component
 import Header from './Header'; // Import the Header component
-import SubpageMamaSindWirNazis from "./pages/SubpageMamaSindWirNazis";
+import SubpageMamaSindWirNazis from "./pages/Nazis";
 
 async function fetchTextFile(filePath) {
   try {

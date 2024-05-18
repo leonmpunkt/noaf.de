@@ -1,3 +1,12 @@
+:root {
+  --color-nazis: #6FB1F9;
+  --color-filterblase: #5CA847;
+  --color-herzen: #377DF7;
+  --color-hetze: #ED6ED6;
+  --color-kartoffel: #F8D648;
+  --color-täter: #EB5729;
+}
+
 .mama {
   margin: 0;
 }
@@ -226,9 +235,12 @@
   width: 225.08px;
   height: 46.91px;
 }
-.subpageMamaSindWirNazis {
+
+/*  */
+/* Suppages */
+.SubpageNazis {
   position: relative;
-  background-color: var(--color-deepskyblue);
+  background-color: var(--color-nazis);
   width: 100%;
   height: 2704px;
   text-align: left;
@@ -236,3 +248,55 @@
   color: var(--color-black);
   font-family: var(--font-poppins);
 }
+.SubpageFilterblase {
+  position: relative;
+  background-color: var(--color-filterblase);
+  width: 100%;
+  height: 2704px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.SubpageHerzen {
+  position: relative;
+  background-color: var(--color-herzen);
+  width: 100%;
+  height: 2704px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.SubpageHetze {
+  position: relative;
+  background-color: var(--color-hetze);
+  width: 100%;
+  height: 2704px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.SubpageKartoffel {
+  position: relative;
+  background-color: var(--color-kartoffel);
+  width: 100%;
+  height: 2704px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.SubpageTäter {
+  position: relative;
+  background-color: var(--color-täter);
+  width: 100%;
+  height: 2704px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+
+
